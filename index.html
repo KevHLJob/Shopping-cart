@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.css">
+    <title>LimitedED Shop || KevDev</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>LimitedED Shop</h1>
+    </header>
+    <section class="container">
+        <!-- elements container -->
+        <div class="container-items">
+            <div class="item">
+                <span class="title-item">Producto 1</span>
+                <img src="./img/Brotherhood.jpg" alt="" class="img-item">
+                <span class="precio-item">$100</span>
+                <button class="boton-item">Comprar</button>
+            </div>
+            <div class="item">
+                <span class="title-item">Producto 2</span>
+                <img src="./img/Cyberpunk.jpg" alt="" class="img-item">
+                <span class="precio-item">$900</span>
+                <button class="boton-item">Comprar</button>
+            </div>
+            <div class="item">
+                <span class="title-item">Producto 3</span>
+                <img src="./img/Matrix.png" alt="" class="img-item">
+                <span class="precio-item">$2500</span>
+                <button class="boton-item">Comprar</button>
+            </div>
+            <div class="item">
+                <span class="title-item">Producto 4</span>
+                <img src="./img/Execution.jpg" alt="" class="img-item">
+                <span class="precio-item">$180</span>
+                <button class="boton-item">Comprar</button>
+            </div>
+            <div class="item">
+                <span class="title-item">Producto 5</span>
+                <img src="./img/Spidey.jpg" alt="" class="img-item">
+                <span class="precio-item">$500</span>
+                <button class="boton-item">Comprar</button>
+            </div>
+            <div class="item">
+                <span class="title-item">Producto 6</span>
+                <img src="./img/Trex.jpg" alt="" class="img-item">
+                <span class="precio-item">$1000</span>
+                <button class="boton-item">Comprar</button>
+            </div>
+            <div class="item">
+                <span class="title-item">Producto 7</span>
+                <img src="./img/paisaje-de-ciudad-futurista-artwork_3840x2160_xtrafondos.com.jpg" alt="" class="img-item">
+                <span class="precio-item">$1000</span>
+                <button class="boton-item">Comprar</button>
+            </div>
+            <div class="item">
+                <span class="title-item">Producto 8</span>
+                <img src="./img/Execution.jpg" alt="" class="img-item">
+                <span class="precio-item">$1000</span>
+                <button class="boton-item">Comprar</button>
+            </div>
+        </div>
+
+        <!-- Products List -->
+        <div class="cart">
+            <div class="header-cart">
+                <h2>Your Cart</h2>
+            </div>
+
+            <div class="cart-items">
+                <div class="cart-item">
+                    <img src="img/Cyberpunk.jpg" alt="" width="20%" height="20%">
+                    <div class="cart-item-details">
+                        <span class="cart-title">Producto 1</span>
+                        <div class="selector">
+                            <i class="fa-solid fa-minus rest-count"></i>
+                            <input type="text" value="1" class="cart-item-count" disabled>
+                            <i class="fa-solid fa-plus sum-count"></i>
+                        </div>
+                        <span class="cart-item-price">$250</span>
+                    </div>
+                    <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </div>
+                <div class="cart-total">
+                    <div class="fila">
+                        <strong>Tu total</strong>
+                        <span class="cart-price-total">
+                            $250
+                        </span>
+                    </div>
+                    <button class="btn-pagar">Pagar<i class="fa-solid fa-basket-shopping"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/index.js" async></script>
+</body>
+
+</html>
