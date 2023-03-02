@@ -45,7 +45,7 @@ function ready(){
 //deleted item of shop cart
 function DeleatItemCart(event){
 var buttonClicked= event.target;
-buttonClicked.parentElement.remove(); //void remove for deleted item
+buttonClicked.parentElement.parentElement.remove(); //void remove for deleted item
 
 //update total of cart
 updateTotal();
@@ -73,7 +73,7 @@ function updateTotal(){
         var cantidadItem =item.getElementsByClassName('cart-item-count') [0];
         var cantidad=cantidadItem.value;
         console.log(cantidad);
-        total= total+(precio* cantidad);
+        total= total+(precio * cantidad);
         
     }
     total= Math.round(total*100)/100;
@@ -134,6 +134,8 @@ console.log(imagenSrc);
 
 agregarItemCart(title,price,imagenSrc);
 
+visibleCart();
+
 }
 
 function agregarItemCart(title,price,imagenSrc){
@@ -187,4 +189,21 @@ function agregarItemCart(title,price,imagenSrc){
 function pagarClicked(event){
 alert("Gracias por su compra");
 
+//deleted all elements of shop cart
+
+var cartItems=document.getElementsByClassName('cart-items')[0];
+while(cartItems.hasChildNodes()){
+    cartItems.removeChild(cartItems.firstChild);
+}
+updateTotal();
+}
+
+function visibleCart(){
+    cartVisible=true;
+    var cart= document.getElementsByClassName('cart')[0];
+    cart.style.marginRight='0';
+    cart.style.opacity='1';
+
+    var items= document.getElementsByClassName('container-items')[0];
+    items.style.width='60';
 }
